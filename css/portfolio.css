@@ -91,6 +91,12 @@ a:hover {
 /* Mobile Breakpoint */
 @media all and (max-width: 480px) {
 	body {
+		font-size: 0.75em;
+ 	}
+ }
+
+ @media all and (max-width: 375px) {
+	body {
 		font-size: 0.5em;
  	}
  }
