@@ -2,40 +2,71 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Winnie Gong | Product Designer</title>
-  <meta name="description" content="Winnie is a product designer located working in the Boston area. ">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Winnie Gong | Product Designer</title>
+	<meta name="description" content="Winnie is a product designer located working in the Boston area. ">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="favicon.ico" sizes="16x16" />
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600|Lato:300" rel="stylesheet">
 </head>
 
 <body>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+	<!--[if lte IE 9]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+	<![endif]-->
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+	<!-- Site Content -->
+		<div id="fullpage">
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+		<!-- SPLASH -->
+			<section data-anchor="hero" class="hero section">  
+				<div class="container">
+					<h1>Winnie Gong<br>Product Designer</h1>
+					<p>I'm a multidisciplinary designer at <a href="http://www.lovepopcards.com">Lovepop Cards</a> where I help people create and share one-of-a-kind magical moments.</p>
+
+					<p> My approach to design is realistic and approachable, supported by hard skills in HTML and CSS. I have designed and supported features throughout the entire product life cycle, but I am most passionate about prototyping and design systems.</<p>
+
+					<p><a class="nav" target="_blank" href="https://www.linkedin.com/in/winifred-gong/">LinkedIn ↗</a><a class="nav" target="_blank"href="assets/wgong_resume_2019.pdf">Resume ↗</a><a href="mailto: winifredgong@gmail.com">Email ↗</a></p>
+				</div>
+			</section>
+		</div>
+
+	<!-- js -->
+	<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- Fullpage.js Copyright (c) 2013 Alvaro Trigo <alvaro@alvarotrigo.com -->
+	<script type="text/javascript" src="js/fullpage/jquery.fullPage.min.js"></script>
+		<script type="text/javascript">
+				$(document).ready(function() {
+						$('#fullpage').fullpage();
+						anchors: ['hero', 'portfolio', 'about']
+				});
+	</script>
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-82410117-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 </body>
 
 </html>
