@@ -6,7 +6,7 @@
 }
 
 body{
-
+	background-color:#FFDFD3;
 }
 
 /* Typography */
@@ -31,7 +31,7 @@ h1 {
 body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	font-size: 1.25em;
+	font-size: 1.125em;
 	letter-spacing: 0.025em;
 }
 
@@ -43,7 +43,7 @@ p {
 
 
 p:last-child { 
-	margin-bottom: 0;}
+	margin-bottom: 2em;}
 
 /* Links */
 
@@ -63,39 +63,113 @@ a:hover {
 	margin-right: 2em;
 }
 
+.links {
+	padding-top: 1em;
+	text-align: right;
+}
+
 /* Container Sections */
 
 .container {
 	background-color: white;
 	box-shadow: 0px 0px 120px 0px rgba(1, 1, 1, 0.25);
-	padding: 5em 2.5em 2.5em 2.5em;
 	width: 70%;
 	margin: auto auto;
 	position: relative;
   top: 50%;
   transform: perspective(1px) translateY(-50%);
+  z-index: 100;
 
 }
 
 /* Hero Section Overrides*/
 
 .hero {
-	background-image: url('../assets/hero_background.svg');
-	background-position: right -4em bottom -4em;
-	background-repeat: no-repeat;
-	background-color:#FFDFD3;
-	color: white;
+	}
+
+.hero .container {
+	padding: 5em 2.5em 2.5em 2.5em;
+}
+
+
+/* Work Section Overrides*/
+
+.work .container {
+	padding: 5em 2.5em 2.5em 2.5em;
+}
+
+.work h1 {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0em;
+	text-align: center;;
+}
+
+/* About Section Overrides*/
+
+.about {
+	}
+
+.about .container {
+	padding: 2.5em 2.5em 5em 2.5em;
+}
+
+.about h1 {
+	top: initial;
+	left: initial;
+	bottom: -1em;
+	right: -1em;
+	text-align: right;
+}
+
+/* Nav Overrides*/
+	.nav {
+	}
+
+	.nav .container {
+		padding: 2.5em 2.5em 5em 2.5em;
 	}
 
 
+
+/* Floating Animation */
+
+.background {
+	position: fixed;
+	width: 100%;
+}
+
+.animation {
+  -webkit-animation: wiggle 120s 0.1s infinite linear;
+  -moz-animation: wiggle 120s 0.1s infinite linear;
+  animation: wiggle 120s 0.1s infinite linear;
+}
+
+ @keyframes wiggle {
+ 		0% {
+ 			-webkit-transform: rotateZ(0deg) translate3d(0, 10%, 0) rotateZ(0deg);
+ 			-moz-transform: rotateZ(0deg) translate3d(0, 10%, 10%) rotateZ(0deg);
+ 			transform: rotateZ(0deg) translate3d(0, 2%, 10%) rotateZ(0deg);
+	 }
+
+	 100% {
+	 		-webkit-transform: rotateZ(360deg) translate3d(0, 10%, 20%s) rotateZ(-360deg);
+	 		-moz-transform: rotateZ(360deg) translate3d(0, 10%, 20%) rotateZ(-360deg);
+	 		transform: rotateZ(360deg) translate3d(0, 1%, 0) rotateZ(-360deg);
+	 }
+ }
+
 /* Mobile Breakpoint */
-@media all and (max-width: 480px) {
+@media all and (max-width: 500px) {
 	body {
 		font-size: 0.75em;
  	}
  }
 
- @media all and (max-width: 375px) {
+ @media all and (max-width: 320px) {
 	body {
 		font-size: 0.5em;
  	}
