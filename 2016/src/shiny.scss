@@ -1,0 +1,154 @@
+body{ 
+margin: 0 auto;
+}
+
+/* FONTS */
+h1,h2,h3,p,a{
+    font-family: 'Julius Sans One', sans-serif;; 
+    color: #ffffff;
+}
+
+h1{font-size: 1.75em}
+h2{font-size: 2em}
+h3{font-size: 1em}
+p{font-size: 0.9em;}
+a {font-size: 0.9em}
+
+/* LINKS */
+a:link, a:visited {
+    background-color: #660066;
+    color: white;
+    padding: 10px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    background-color: transparent;
+    border: 1px solid #CCCCCC;
+}
+
+
+/* NAVIGATION */
+.sidebar, .sidebar2 {
+    background-color: #000000;
+    left: 5%;
+    margin: 10px;
+    opacity: 0.9;
+    position: fixed;
+    text-transform: uppercase;
+    text-align: center;
+    width: 20%;
+    z-index: 3;
+}
+
+.sidebar {
+    top: -10px;
+    height: 400px;
+    padding: 20px 20px;
+}
+
+.sidebar2 {
+    bottom: 0px;
+    height: 75px;
+    padding: 10px 20px;
+}
+
+.circle{
+    border-radius: 50%!important;
+    height: 200px;    
+}
+
+/* TOP, MIDDLE DISPLAY */
+.top-display, .mid-display{
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+.top-display {
+    background-image:url(../images/BG.png);
+    background-size: cover;
+    background-opacity: 0.8;
+}
+
+.mid-display {
+    background-image:url(../images/BG.png);
+    background-size: cover;
+    background-opacity: 0.8;
+}
+
+/* ABOUT , PORTFOLIO ARTICLES */ 
+.about, .portfolio{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform:translate(-50%,-50%);
+    width: 40%;
+    height: 35%;
+    padding: 20px;
+    background-color: #000000;
+    opacity: 0.9;
+    color: #FFFFFF;
+    align-content: center;
+}
+
+/* FOOTER */
+.faces {
+    position: fixed;
+    z-index: 3;
+    padding: 20px;
+    bottom:0px;
+    right: 0px;
+    width: 250px;
+    height: 10px;
+    text-decoration: none;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    flex-direction: column;
+}
+
+
+/* RESPONSIVE LAYOUTS? */
+@media only screen and (min-width:1001px){
+    .mobilenav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .sidebar {
+        display: none;
+    } 
+
+    .sidebar2 {
+        display: none;
+    } 
+
+    .mobilenav {
+        position: relative;
+        padding: 20px;
+        width: 100%;
+        background-color: #000000;
+        opacity: 0.9;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        flex-direction: column;
+        justify-content: center;
+    } 
+
+    .about, .portfolio{
+        position: absolute;
+        width: 75%;
+        top: 50%;
+        left: 50%;
+    }
+}
+
+

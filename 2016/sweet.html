@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SWEET | Winnie Gong</title>
+	<link rel='shortcut icon' href="assets/images/favi.ico" type='image/x-icon'/>
+    <meta charset="utf-8">
+    <meta name="description" content="A visual novel passion project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/port.css">
+    <link rel="stylesheet" type="text/css" href="fp/jquery.fullPage.css" />
+</head>
+
+<body>
+	<!-- BACK BUTTON-->
+	<div class="back">
+		<a href="index.html#portfolio"><</a>
+	</div>
+
+	<!-- HEADER -->
+	<div class="header">
+		<img src="assets/images/headers/sweet.svg" alt='sweet.exe' class="wrap"> 
+		<p>SWEET is a visual novel where you play as a young girl who pieces her friends' memories together.</p>
+		<p>
+
+		<a href="sweetgame.html">Play the Demo</a>
+	</div>
+
+	<!-- CONTENT -->
+	<div class="wrap">
+
+		<h2>BEGINNINGS</h2>
+		<img src="assets/images/digital_sisters.png" class="image">
+		<p>SWEET.exe was first drafted as a webcomic with interactive storytelling. After meeting and working with some folks at the MIT Game Global Game Jam, I decided that it would be much more fulfilling to make it a video game instead. I was heavily inspired by the indie video game community, particularly in games made by one-person staff, such as <a href="http://undertale.com/" target="blank">Undertale</a> and <a href="https://www.kickstarter.com/projects/80348891/pinstripe-an-adventure-through-hell" target="blank">Pinstripe.</a></p>
+
+		<h2>CHARACTER DESIGN</h2>
+		<img src="assets/images/sweet_sprite_sheets.png" class="image">
+		<p>As most illustrators do, I have a set of beloved original characters that I have been drawing for years. Therefore, it was only natural for them to be part of the main cast of the game. Honey and Molasses are the two main point-of-view characters which the players control throughout the game.
+		
+		<p>Honey's design has stayed the same since her inception, but Molasses has been reworked and looks completely different from her first design.</p>
+	
+		<h2>UI</h2>
+		<img src="assets/images/sweet_room.png" class="image">
+		<p>I went for a 2-bit feel for the majority of the game. It was the best way to maintain a consistent graphic style, as my illustration styles constantly shift depending on my mood and skill level.</p>
+		<p>Special thanks to <a href="http://www.piskelapp.com/" target="blank">Piskel</a> for creating such an easy spriteing tool available for use!</p>
+
+		<img src="assets/images/gifs/sweet_dialogue.gif" class="image">
+		<p>As this was my first game, I went with a Visual Novel style of UI. I plan to game to take from 2-4 hours to play, so the goal was to keep the UI simple and minimal, using point-and-click mechanics.</p>
+
+		<h2>DECISION TREE</h2>
+
+		<p>The decision to go with multiple endings and reverse storytelling came from a brainstorming session during the game jam. Our team developed a plethora of concepts but, we eventually settled on a tabletop design for one of our concepts. I fixated on one of our ideas, where a child wakes up from a car accident and tries to piece together the clues that lead to the accident, and decided to roll with that for my own personal project.</p>
+
+		<p>I decided to go with four basic endings (TRUE, NEUTRAL, NOTHING, BAD) with slight variations based on smaller choices the player makes in the game. I am not a fan of using attachment variables (e.g. X character likes me at 90% which means that will trigger Y event) as I believe that is not how things happen in real life, so instead, a basic decision tree was designed for the game.</p>
+
+		<h2>DEVELOPMENT</h2>
+		<p>The ultimate goal is to turn this game into a reality using a javascript based game engine such as <a href="http://phaser.io/learn" target="blank">Phaser</a>. Another alternative is using <a href="https://www.renpy.org" target="blank">Ren'py</a> to transform the game into a visual novel, if I decide that making the game into a fully fleshed out RPG would be too much.</p>
+
+		<p><u>Update:</u> I decided to use<a href="http://tyranobuilder.com/" target="blank">Tyrano Builder</a> for this project, as it allows the game to be ported to web and also allows for more customizability through the use of javascript. Basically, it contains all the customization I needed from Phaser combined with the simplicity of Ren'py.</p>
+
+		<h2>DEMO LAUNCH</h2>
+		<img src="assets/images/gifs/sweet_title_screen.gif" class="image">
+		<p>I am very happy to say that I have a working <a href="sweetgame.html" target="blank">demo</a> of the game! I am currently collecting feedback and documenting the changes along the way. Below are some notable comments that users have pointed out during testing:</p>
+
+		<ul class="list">	  
+			  <li><b>The background music stops suddenly after the intro</b>: This was a result of my own laziness (finding royalty-free gaming music is much harder than you would think!). Having the background music stop abruptly at the beginning of the game breaks the player's immersion.</b></li>
+			  <li><b>Too much exposition</b>: It takes about a minute for the user to make the first decision in the game. Although I have played many visual novels with much longer intros, testers reported that there was "too much reading" in the beginning.</li>
+			  <li><b>Users enjoyed interactivity</b>: Although this is a visual novel, many of the playtesters were not familiar with the medium, noting that their favorite parts of the game are when they are able to interact with the visuals and make decisions.</b></li>
+			</ul>
+
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+[preload  storage="./data/bgimage/gray_bg.png"  ]
+[preload  storage="./data/fgimage/default/blinking_stars.gif"  ]
+[preload  storage="./data/fgimage/default/moon.gif"  ]
+[preload  storage="./data/fgimage/chara/1/molasses_still.gif"  ]
+[preload  storage="./data/fgimage/chara/1/molasses_upset_talking.gif"  ]
+[return]

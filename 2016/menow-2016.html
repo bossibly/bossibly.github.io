@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MENOW | Winnie Gong</title>
+	<link rel='shortcut icon' href="assets/images/favi.ico" type='image/x-icon'/>
+    <meta charset="utf-8">
+    <meta name="description" content="Winnie is a visual designer and illustrator from Boston">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/port.css">
+    <link rel="stylesheet" type="text/css" href="fp/jquery.fullPage.css" />
+</head>
+
+<body>
+	<!-- BACK BUTTON-->
+	<div class="back">
+		<a href="index.html#portfolio"><</a>
+	</div>
+
+	<!-- HEADER -->
+	<div class="header">
+		<img src="assets/images/headers/menow.svg" alt='menow' class="wrap"> 
+		<p>A geotagging application for street cats.</p>
+		<a href="menow.html">Check out new developments here!</a>
+	</div>
+
+	<!-- CONTENT -->
+	<div class="wrap">
+
+		<h2>BEGINNINGS</h2>
+		<img src="assets/images/menow_hk.jpg" class="image">
+		<p>This application is based on a photo <a href="https://www.facebook.com/media/set/?set=a.10153655356426763.1073741839.633156762&type=1&l=b517bb2656" target=" blank">album</a> I kept during my stay in Hong Kong. Because there were so many cats around, I tried to document them all by taking photos with my phone. I later thought, "it would be great if people collectively had photos of these cats geotagged so we knew about all of them" and <i>that</i>, my friends, was the best idea I had all year.</p>
+
+		<h2>INITIAL SKETCHES</h2>
+		<img src="assets/images/menow_sketch.png" class="image">
+		<p>I hadn't thought to sketch out the actual UI of the application until an <a href="http://lmosele.com/" target="blank">instructor</a> of ours at SI asked us for one. He needed the idea to demonstrate how to use sketch for our class, and I thought it would be a perfect opportunity to build out this application. We had just learned how to use InVision and I realized that I could actually make a decent wireframe for this application.</p>
+
+		<h2>STYLE</h2>
+		<img src="assets/images/catbg1.png" class="image">
+		<p>I first decided to go for a "handdrawn" look for the application as a personal style choice, but I realized it would look too similar to neko atsume and many other cat-related applications on the market, so I quickly screpped this style.</p>
+		<img src="assets/images/meows.png" class="image">
+		<p>I'm decided to move away from that and switching to pixel graphics instead to bring a gaming element to the app, but we may move it to another direction in the future. The current prototype simply uses google material design.</p>
+
+		<h2>UX/UI</h2>
+		<img src="assets/images/menow_intro.png" class="image">
+		<p>Determining what I wanted for the UI/UX was a bit tougher once I was trying to translate the sketches into actual wireframes in Sketch. Design decisions which particularly stood out include the following:</p>
+	
+		<img src="assets/images/menow_catmap.png" class="image">
+		<p>
+			<u>Should users should able to add cats to the application at any time or if cats should be approved by a moderator first?</u>
+			<br>This decision was by far the toughest one I had to weigh on because it basically determined if this app would be more like a game (like Pokemon Go) or a community where you can tag cats (like Instagram's geotagging functionality). I ultimately decided that for my own sanity, the cats displayed on the map must be approved by a moderator beforehand. Having anyone be able to tag any cat available seemed to be something that would be too overwhelming for the first iteration of the application. Another avenue I was exploring was to have users add friends to the application, and set permissions where only friends can see each other's cats on the app. I vetoed this option as I assumed it could alienate some users (i.e. the app won't be any fun unless you have friends, and who has friends?!).
+		</p>
+
+		<img src="assets/images/menow_modals.png" class="image">
+		<p>
+			<u>Is having a Cancel/Exit/No button on the bottom as well as an 'x' button on the modals redundant?</u>
+			<br>At first I was going to leave it on so that users can have multiple ways to exit the page, but after speaking to a couple of UI designers, I realized it would be redundant, so the exit/cancel buttons were removed for the modals, but kept in other areas, such as the login screen, or where the x button can be used for a "cancel" versus a "no" button.
+		</p>
+
+		<img src="assets/images/menow_add.png" class="image">
+		<p>
+			<u>Should I list the Breeds and Colors alphabetically or by how common they are?</u>
+			<br>For Colors, it seemed to make more sense to list them alphabetically, as your typical user would know what colors are available. However, when it came to Breeds, I struggled if they should be listed alphabetically or by the rarity of the breed. I ultimately decided to list it alphabetically for consistency. (Also, while we are looking at these screens I wonder if it is apparent that there are more options beyond the ones shown, maybe a scrollbar will help?)
+		</p>
+
+		<h2>THE FUTURE!</h2>
+		<img src="assets/images/menow_sketch_ui.png" class="image">
+		<p>My friend <a href="https://kwongdev.github.io/" target="blank">Kenny</a>, a full stack developer, is working on making a prototype for the application based on my wireframes, I'm excited to work with him to make this a real thing!:)</p>
+	</div>
+
+</body>
+
+</html>

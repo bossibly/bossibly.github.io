@@ -1,0 +1,219 @@
+body {
+  margin: 0 auto;
+}
+
+// FONTS
+
+@font-face {
+    font-family: apercu-regular;
+    src: url('../assets/fonts/apercu/apercu-regular.woff');
+}
+
+@font-face {
+    font-family: apercu-light;
+    src: url('../assets/fonts/apercu/apercu-light.woff');
+}
+
+
+h1, h2, h3 {
+  font-family: apercu-regular;
+  color: #000000;
+}
+
+h4, a, p{
+    font-family: apercu-light;
+}
+
+h4, p{
+    color: #222222;
+    color: rgba(0, 0, 0, 0.75)
+}
+
+h1 {font-size: 2.5em;}
+h2 {font-size: 2.5em; text-align: center;}
+h3 {font-size: 2em; text-align: center;}
+h4 {font-size: 1em;}
+a {font-size: 1em;}
+p {font-size: 0.9em;}
+
+// SPOILERS
+.spoiler { 
+  color: black; 
+  background-color: #000000;
+  &:hover { 
+    background-color: transparent; 
+  }
+}
+
+//LINKS
+a {
+  &:link, &:visited {
+    background-color: #ff6666;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid transparent;
+  }
+  &:hover {
+    color: #000000;
+    background-color: transparent;
+    border: 1px solid #000000;
+    -webkit-transition: margin-top 0.3s ease, box-shadow 0.3s ease ;
+    -moz-transition: margin-top 0.3s ease, box-shadow 0.3s ease;
+    transition: margin-top 0.3s ease, box-shadow 0.3s ease;
+    -webkit-box-shadow: 9px 9px 0px #222222;
+    -moz-box-shadow: 9px 9px 0px #222222;
+    box-shadow: 9px 9px 0px #222222;
+  }
+}
+
+//HOVER.CSS ANIMATIONS CREDIT: http://ianlunn.github.io/Hover/)
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+.hvr-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-rotate:hover, .hvr-rotate:focus, .hvr-rotate:active {
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+
+//BACK BUTTON
+.back {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    &:hover{
+      -webkit-transition: margin-top 0.3s ease, box-shadow 0.3s ease ;
+      -moz-transition: margin-top 0.3s ease, box-shadow 0.3s ease;
+      transition: margin-top 0.3s ease, box-shadow 0.3s ease;
+      -webkit-box-shadow: 9px 9px 0px #222222;
+      -moz-box-shadow: 9px 9px 0px #222222;
+      box-shadow: 9px 9px 0px #222222;
+  }
+}
+
+
+//HEADER
+.header{ 
+    background-image:
+        linear-gradient(rgba(225, 153, 153, 0.5), rgba(123, 123, 253, 0.5)), 
+        url('../assets/images/geo.png');
+    background-attachment: fixed;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    }
+
+
+// LAYOUT
+.wrap{
+  margin: 0px auto;
+  overflow: hidden;
+  width: 700px;
+  max-width: 60%;
+  a{
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #ff6666;
+    padding: 0px;
+  }
+}
+
+.section{
+  padding: 40px 0px;
+}
+
+li {
+  font-size: 0.8em;
+  font-family: apercu-light;
+  line-height: 1.8em;
+  color: #444444;
+  right: 100;
+}
+
+img {
+    max-width:100%;
+}
+
+
+// RESPONSIVE
+@media only screen and (max-width: 1085px){
+  .wrap{
+    margin: 0px auto;
+    max-width: 75%;
+  }
+  
+}

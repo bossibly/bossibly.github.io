@@ -1,0 +1,95 @@
+/* FONTS */
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Julius Sans One', sans-serif;; 
+    font-color: #000000;
+}
+
+h1{font-size:32px}
+h2{font-size:28px}
+h3{font-size:24px}
+h4{font-size:20px}
+h5{font-size:18px}
+h6{font-size:16px}
+p{font-size: 12px;}
+
+/* LINKS */
+a:link, a:visited {
+    background-color: #660066;
+    color: white;
+    padding: 10px;
+    text-align: center; 
+    text-decoration: none;
+    font-family: 'Julius Sans One', sans-serif;; 
+    display: inline-block;
+}
+
+a:hover {
+    background-color: transparent;
+    border: 1px solid #CCCCCC;
+}
+
+.back{
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    z-index: 5;
+}
+
+/* JQUERY PARALLAX SCROLL by Weblinc LLC */
+body {
+    background-color: #28cdf6;
+} 
+
+.bg1 {
+    background-image:url(../assets/images/catbg1.png);
+    background-repeat: repeat;
+    background-size: 100%;
+    height: 800vh;
+    width:100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.bg2 {
+    background-image:url(../assets/images/catbg2.png);
+    background-repeat: repeat;
+    background-size: 100%;
+    height: 800vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 3;
+}
+
+.bg3 {
+    background-image: url(../assets/images/hikenny.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width : 800px) {
+    .bg1 {
+        background-size: 100% 50%;
+    }
+
+    .bg2 {
+        background-size: 100% 50%;
+    }
+
+    .bg3 {
+        background-size: 100% 50%;
+    }
+}
+

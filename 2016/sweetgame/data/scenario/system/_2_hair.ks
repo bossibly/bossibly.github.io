@@ -1,0 +1,5 @@
+[preload  storage="./data/bgimage/room_molasses.png"  ]
+[preload  storage="./data/fgimage/chara/1/molasses_simple_hair_talking.gif"  ]
+[preload  storage="./data/fgimage/chara/1/molasses_simple_hair_still.gif"  ]
+[preload  storage="./data/fgimage/chara/1/molasses_simple_hair_talking_angry.gif"  ]
+[return]

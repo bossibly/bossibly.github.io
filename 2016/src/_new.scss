@@ -1,0 +1,395 @@
+// ONSITE
+
+body {
+    margin: 0;
+    background-color: #222222;
+    cursor: url('../assets/images/cursors/cur.cur'), default;
+}
+
+// FONTS
+
+@font-face {
+    font-family: apercu-regular;
+    src: url('../assets/fonts/apercu/apercu-regular.woff');
+}
+
+@font-face {
+    font-family: apercu-light;
+    src: url('../assets/fonts/apercu/apercu-light.woff');
+}
+
+
+h1, h2, h3 {
+  font-family: apercu-regular, sans-serif;
+  color: #ffffff;
+}
+
+h4, a, p{
+    font-family: apercu-light, sans-serif;
+}
+
+h4, p{
+    color: #222222;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+h1 {font-size: 2.5em;}
+h2 {font-size: 1em;}
+h3 {font-size: 1em;}
+h4 {font-size: 1em;}
+a {font-size: 1em;}
+p {font-size: 0.9em;}
+
+// LINKS
+a {
+  &:link, &:visited {
+    background-color: #ff6666;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid transparent;
+  }
+  &:hover, &:active {
+    background: transparent;
+    border: solid 1px #222222;
+    color: #222222;
+    -webkit-transition: margin-top 0.3s ease, box-shadow 0.3s ease ;
+    -moz-transition: margin-top 0.3s ease, box-shadow 0.3s ease;
+    transition: margin-top 0.3s ease, box-shadow 0.3s ease;
+    -webkit-box-shadow: 9px 9px 0px #222222;
+    -moz-box-shadow: 9px 9px 0px #222222;
+    box-shadow: 9px 9px 0px #222222;
+  }
+}
+
+a.plain{
+      &:link, &:visited {
+        background-color: transparent;  
+        color: #222222;
+        padding: 0px;
+        text-align: center;
+        text-decoration: underline;
+        display: inline-block;
+        border: 0px solid transparent;
+      }
+      &:hover, &:active {
+        background: transparent;
+        border: solid 0px;
+        color: #d3d3d3;
+        text-decoration: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      }
+    }
+
+// SHARED CLASSES
+
+.full {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.notsopaque {
+    opacity: 0.8;
+}
+
+//HOVER.CSS ANIMATIONS CREDIT: http://ianlunn.github.io/Hover/)
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+.hvr-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-rotate:hover, .hvr-rotate:focus, .hvr-rotate:active {
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+
+// SPLASH
+.splash {
+    background-image:
+        linear-gradient(rgba(123, 253, 188, 0.25), rgba(123, 123, 253, 0.5)), 
+        url('../assets/images/geo.png');
+    }
+
+.heading-top{
+    height: 60vh;
+    padding: 20px;
+    z-index: 2px;
+}
+
+
+// PORTFOLIO
+.heading{
+    height: 100px;
+    padding: 20px;
+    z-index: 2px;
+}
+
+.portfolio{
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), 
+        url('../assets/images/headers/portfolio.svg');
+    background-position: center;
+    background-repeat: repeat;
+    background-position: fixed;
+    padding: 20px;
+    a{
+        &:link, &:visited {
+            background-color: transparent;
+            color: #ff6666;
+            padding: 0 0 0 0;
+            text-align: center;
+            display: inline-block;
+        } 
+        &:hover {
+            color: #ff9966;
+            border: 0px solid #CCCCCC;
+            -webkit-transition: margin-top 0.3s ease, box-shadow 0.3s ease ;
+            -moz-transition: margin-top 0.3s ease, box-shadow 0.3s ease;
+            transition: margin-top 0.3s ease, box-shadow 0.3s ease;
+            -webkit-box-shadow: none;
+             -moz-box-shadow: none;
+            box-shadow: none;
+        }
+    }
+}
+
+
+
+
+// PORTFOLIO ITEMS
+.thumbnail{
+    min-width: 75px;
+    width: 70%;
+}
+
+.thumbnail-small{
+    padding-top: 20px;
+    min-width: 50px;
+    width: 30%;
+}
+
+.p-item{
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 10px 30px;
+    margin: 30px;
+    &:hover {
+        h4 {
+            color: #ff6666;
+        }
+        background: url('../assets/images/geo.png');
+        -webkit-transition: margin-top 0.3s ease, box-shadow 0.3s ease ;
+        -moz-transition: margin-top 0.3s ease, box-shadow 0.3s ease;
+        transition: margin-top 0.3s ease, box-shadow 0.3s ease;
+        -webkit-box-shadow: 9px 9px 0px #ff6666;
+        -moz-box-shadow: 9px 9px 0px #ff6666;
+        box-shadow: 9px 9px 0px #ff6666;
+
+    }
+}
+
+// ABOUT
+
+.about {
+    background-image:
+        linear-gradient(rgba(253, 123, 188, 0.25), rgba(253, 188, 123, 0.5)), 
+        url('../assets/images/geo.png');
+}
+
+.info {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin: 40px;
+    padding: 40px;
+    width: 40%;
+        p {color: #222222;}
+    box-shadow: 9px 9px 0px rgba(0, 0, 0, 0.75);  
+}
+
+#clickme {
+    position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: inline-block;
+}
+
+// FUN
+.hehe{
+    position: fixed;
+    z-index: 3;
+    padding: 20px;
+    bottom: 10px;
+    right: 0px;
+    height: 10px;
+    text-decoration: none;
+    a{
+        &:link, &:visited {
+            background-color: transparent;
+            padding: 0px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        } 
+        &:hover {
+            background-color: transparent;
+            border: 1px solid transparent;
+        }
+    }
+}
+
+// RESPONSIVE LAYOUTS
+
+@media only screen and (min-width: 480px) {
+    .show{
+        display: none;
+    }
+}
+@media only screen and (max-width: 863px) {
+    .heading-top{
+        height: 40vh;    
+    }
+    .heading-top{
+        height: 40vh;
+    }
+    .thumbnail, .thumbnail-small, .x-info{
+        display: none;
+    }
+}
+
+// MOBILE - PORTRAIT & LANDSCAPE
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    a{
+        width: 70%;
+        margin-top: 20px;
+        font-size: 2em;
+    } 
+    a.plain{
+        width: auto;
+
+    }
+    p{
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 3em;
+    }
+    .heading-top{
+        height: 30vh;
+    }
+    .thumbnail{
+        width: 200%;
+    }
+    .thumbnail-small{
+        width: 100%;
+    }
+    .p-item{
+        overflow: hidden;
+    }
+    .hide{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+    .info{
+        width: 80%;
+    }
+}
+
+

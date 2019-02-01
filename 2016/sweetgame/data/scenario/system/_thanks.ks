@@ -1,0 +1,5 @@
+[preload  storage="./data/bgimage/white_bg.png"  ]
+[preload  storage="./data/fgimage/chara/5/winnie_talking.gif"  ]
+[preload  storage="./data/fgimage/chara/5/winnie_crying.gif"  ]
+[preload  storage="./data/fgimage/chara/5/winnie_embarrased.gif"  ]
+[return]

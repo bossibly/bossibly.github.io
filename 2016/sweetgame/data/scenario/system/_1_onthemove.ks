@@ -1,0 +1,6 @@
+[preload  storage="./data/bgimage/black_bg.png"  ]
+[preload  storage="./data/bgimage/gray_bg.png"  ]
+[preload  storage="./data/bgimage/white_bg.png"  ]
+[preload  storage="./data/fgimage/default/entryway.png"  ]
+[preload  storage="./data/fgimage/default/white_overlay.png"  ]
+[return]
