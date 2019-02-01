@@ -8,11 +8,13 @@ body {
   font-family: apercu-light;
   src: url("../assets/fonts/apercu/apercu-light.woff"); }
 h1, h2, h3 {
-  font-family: apercu-regular;
+  font-family: Lato, apercu-regular, sans-serif;
+  font-weight: 300;
   color: #000000; }
 
 h4, a, p {
-  font-family: apercu-light; }
+  font-family: Lato, apercu-light, sans-serif;
+  font-weight: 300 }
 
 h4, p {
   color: #222222;
@@ -159,7 +161,7 @@ a:hover {
 
 li {
   font-size: 0.8em;
-  font-family: apercu-light;
+  font-family: Lato, apercu-light, sans-serif;
   line-height: 1.8em;
   color: #444444;
   right: 100; }

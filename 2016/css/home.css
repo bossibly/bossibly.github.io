@@ -2340,7 +2340,8 @@ h1, h2, h3 {
   color: #ffffff; }
 
 h4, a, p {
-  font-family: apercu-light, sans-serif; }
+  font-family: Lato, apercu-light, sans-serif;
+  font-weight: 300; }
 
 h4, p {
   color: #222222;
